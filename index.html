@@ -17,15 +17,22 @@
       text-align: center;
       padding: 2rem;
       box-sizing: border-box;
+      flex-direction: column;
     }
-    p {
+    .main-text {
       font-size: 1.8rem;
       line-height: 1.6;
       max-width: 800px;
+      margin-bottom: 3rem; /* crea spazio tra testo e email */
+    }
+    .email {
+      font-size: 1.65rem; /* circa 2pt in meno rispetto a 1.8rem */
+      user-select: none; /* opzionale: impedisce la selezione accidentale */
     }
   </style>
 </head>
 <body>
-  <p>"E' il tempo dell'attesa, affinché i frutti prendano colore e possano essere assaporati insieme a chi ti vuol bene."</p>
+  <p class="main-text">"E' il tempo dell'attesa, affinché i frutti prendano colore e possano essere assaporati insieme a chi ci vuol bene."</p>
+  <p class="email">info@maxallegritti.com</p>
 </body>
 </html>
